@@ -41,7 +41,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
           text: '介绍',
           items: [
             {
-              text: 'Pinia 是什么？',
+              text: 'Pinia是什么？',
               link: '/zh/introduction.html',
             },
             {
