@@ -74,7 +74,7 @@ In _Setup Stores_:
 - `computed()`s become `getters`
 - `function()`s become `actions`
 
-Note that you **must** return **all state properties** in setup stores for Pinia to pick them up as state. In other words, you cannot have [_private_ state properties in stores](https://masteringpinia.com/blog/how-to-create-private-state-in-stores). Not returning all state properties or **making them readonly** will break [SSR](../cookbook/composables.md), devtools, and other plugins.
+Note that you **must** return **all state properties** in setup stores for Pinia to pick them up as state. In other words, you cannot have [_private_ state properties in stores](https://masteringpinia.com/blog/how-to-create-private-state-in-stores). Not returning all state properties or **making them readonly** will break SSR, devtools, and other plugins.
 
 Setup stores bring a lot more flexibility than [Option Stores](#option-stores) as you can create watchers within a store and freely use any [composable](https://vuejs.org/guide/reusability/composables.html#composables). However, keep in mind that using composables will get more complex when using SSR.
 
@@ -120,7 +120,7 @@ const store = useCounterStore()
 ```
 
 :::tip
-If you are not using `setup` components yet, [you can still use Pinia with _map helpers_](../cookbook/options-api.md).
+If you are not using `setup` components yet, you can still use Pinia with _map helpers_.
 :::
 
 You can define as many stores as you want and **you should define each store in a different file** to get the most out of Pinia (like automatically allowing your bundler to code split and providing TypeScript inference).
