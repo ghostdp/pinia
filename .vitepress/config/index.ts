@@ -4,6 +4,7 @@ import { zhConfig } from './zh'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // base: "/pinia/",
   title: "Pinia",
   description: "A VitePress Site",
   cleanUrls: true,
